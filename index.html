@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rohit Mandal | Project Manager, DERMS and Grid Technology</title>
+<meta name="description" content="Project Manager and Certified ScrumMaster with 7+ years delivering DERMS and grid technology projects for utilities in the US, Saudi Arabia and South Korea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F0F3F5; --panel:#FFFFFF; --ink:#12202B; --muted:#4D5E6B; --line:#CBD5DC;
+  --teal:#0D6C7B; --amber:#E39B0B; --amber-ink:#5A3B00;
+  --display:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;
+  --body:"Manrope",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0E171E; --panel:#15222C; --ink:#E8EEF2; --muted:#9FB0BC; --line:#2A3B47; --teal:#4FC3D4; --amber:#F2B53A; --amber-ink:#1A1200}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:1.25rem;align-items:center;justify-content:space-between;padding-top:.75rem;padding-bottom:.75rem;flex-wrap:wrap}
+nav strong{font-family:var(--display);font-size:1.1rem}
+nav ul{display:flex;gap:1.1rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--teal)}
+header.hero{padding:4.5rem 0 3rem}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2.8rem,9vw,6rem);line-height:.98;letter-spacing:-.03em;margin:0 0 1.25rem}
+.role{font-family:var(--display);font-size:clamp(1.15rem,2.6vw,1.6rem);color:var(--teal);margin:0 0 1.25rem;font-weight:500}
+.lede{max-width:40rem;color:var(--muted);font-size:1.15rem;margin:0 0 1.75rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.75rem 1.25rem;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}
+.btn:hover{transform:translateY(-1px)}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font-family:var(--display);font-size:clamp(1.7rem,4vw,2.3rem);letter-spacing:-.02em;margin:0 0 1.5rem}
+h3{font-family:var(--display);font-size:1.3rem;margin:0 0 .25rem}
+.sub{color:var(--muted);margin:0 0 1rem;font-weight:500}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:2.5rem}
+.about p{margin:0 0 1rem;max-width:38rem}
+dl.record{margin:0;display:grid;gap:.9rem}
+dl.record div{border-left:4px solid var(--amber);padding-left:.9rem}
+dl.record dt{font-family:var(--display);font-weight:700;font-size:1.5rem;line-height:1.2}
+dl.record dd{margin:0;color:var(--muted);font-size:.95rem}
+/* Timeline */
+.gantt{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:1.25rem 1.25rem 1rem;margin-bottom:2rem;overflow-x:auto}
+.gantt-inner{min-width:34rem}
+.years{display:grid;grid-template-columns:repeat(8,1fr);font-size:.85rem;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:.4rem}
+.track{position:relative;height:2.6rem;margin-top:.7rem;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(12.5% - 1px),var(--line) calc(12.5% - 1px),var(--line) 12.5%)}
+.bar{position:absolute;top:.2rem;height:2.2rem;border-radius:4px;display:flex;align-items:center;padding:0 .7rem;font-size:.9rem;font-weight:600;white-space:nowrap;overflow:hidden}
+.bar.ba{left:3.1%;width:26%;background:var(--teal);color:#fff}
+.bar.pm{left:29.2%;width:67.7%;background:var(--amber);color:var(--amber-ink)}
+@media (prefers-color-scheme:dark){.bar.ba{color:#06232A}}
+.role-block{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:1.5rem;margin-bottom:1.25rem}
+.role-block ul{margin:.75rem 0 0;padding-left:1.2rem}
+.role-block li{margin-bottom:.55rem;max-width:46rem}
+details{margin-top:.75rem}
+summary{cursor:pointer;font-weight:600;color:var(--teal)}
+/* Skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.5rem}
+.skills h3{font-size:1.1rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:.5rem 0 0;list-style:none}
+.chips li{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:.2rem .7rem;font-size:.9rem}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:2rem}
+.cols ul{padding-left:1.1rem;margin:.5rem 0 0}
+.cols li{margin-bottom:.5rem}
+footer{padding:3rem 0 4rem;border-top:1px solid var(--line)}
+footer p{color:var(--muted)}
+.big-link{font-family:var(--display);font-size:clamp(1.3rem,4vw,2rem);font-weight:700}
+@media (max-width:720px){.about{grid-template-columns:1fr}header.hero{padding-top:3rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+
+nav{background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px)}
+header.hero{background:radial-gradient(60rem 30rem at 85% 20%,#12485A 0,transparent 60%),linear-gradient(160deg,#0B1A24,#0F2733);color:#fff;padding:4rem 0 7rem}
+.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:2rem;align-items:center}
+.badge{display:inline-grid;place-items:center;width:3.4rem;height:3.4rem;border-radius:14px;background:var(--amber);color:#2A1B00;font:700 1.25rem var(--display);margin-bottom:1.25rem;transform:rotate(-6deg)}
+h1{color:#fff}
+.role{color:#F2B53A}
+.lede{color:#B9C9D4}
+header.hero .btn{color:#fff;border-color:#5C7686}
+header.hero .btn.primary{background:var(--amber);border-color:var(--amber);color:#2A1B00}
+.net{width:100%;max-width:26rem;justify-self:center}
+.net .lines path{stroke-dasharray:1;stroke-dashoffset:0;animation:draw 1.8s ease-out both}
+.net circle{animation:pop .6s ease-out .9s both;transform-box:fill-box;transform-origin:center}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes pop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:scale(1)}}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:1rem;margin:-4rem 0 0;position:relative}
+.stats div{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--amber);border-radius:10px;padding:1.1rem 1.2rem;box-shadow:0 10px 30px -12px rgba(8,25,36,.35)}
+.stats div:nth-child(even){border-top-color:var(--teal)}
+.stats dt{font:700 2.4rem/1 var(--display);color:var(--teal)}
+.stats dd{margin:.4rem 0 0;color:var(--muted);font-size:.93rem;line-height:1.4}
+.about{display:block}
+.about p{font-size:1.1rem}
+section{padding:3.5rem 0}
+.role-block{border-top:4px solid var(--teal);box-shadow:0 8px 24px -14px rgba(8,25,36,.35)}
+.role-block:nth-of-type(2){border-top-color:var(--amber)}
+.gantt{box-shadow:0 8px 24px -14px rgba(8,25,36,.3)}
+.skills>div{background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:10px;padding:1.1rem 1.2rem}
+.skills>div:nth-child(2n){border-left-color:var(--amber)}
+.chips li{transition:background .15s,color .15s}
+.chips li:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+.cols>div{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:1.25rem}
+footer{background:linear-gradient(160deg,#0B1A24,#0F2733);color:#fff;border:0;margin-top:2rem}
+footer h2{color:#fff}
+footer p{color:#B9C9D4}
+footer a{color:#F2B53A}
+footer .big-link{color:#F2B53A}
+@media (max-width:720px){.hero-grid{grid-template-columns:1fr}.net{max-width:16rem}header.hero{padding-bottom:6rem}}
+@media (prefers-reduced-motion:reduce){.net .lines path,.net circle{animation:none}}
+
+.portrait{position:relative;justify-self:center;width:100%;max-width:21rem}
+.portrait .net{position:absolute;left:-22%;top:-10%;width:144%;max-width:none;opacity:.5;z-index:0}
+.portrait img{position:relative;z-index:1;display:block;width:100%;height:auto;border-radius:18px;border:3px solid var(--amber);box-shadow:14px 14px 0 rgba(227,155,11,.35)}
+@media (max-width:720px){.portrait{max-width:15rem;margin-top:1.5rem}}
+</style>
+</head>
+<body>
+<nav aria-label="Main">
+  <div class="wrap">
+    <strong>Rohit Mandal</strong>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1>Rohit Mandal</h1>
+      <p class="role">Project Manager and Program Manager for utility technology</p>
+      <p class="lede">I deliver DERMS and grid management projects for utilities in the US, Saudi Arabia and South Korea, and keep clients, vendors and engineers working from the same plan.</p>
+      <div class="btns">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn" href="Rohit_Mandal_Resume.pdf" download>Download resume</a>
+        <a class="btn" href="https://linkedin.com/in/rohit-agile-pm" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <svg class="net" viewBox="0 0 320 300" aria-hidden="true">
+      <g class="lines" fill="none" stroke="#4FC3D4" stroke-width="1.5" stroke-linecap="round">
+        <path pathLength="1" d="M160 150L70 70"/><path pathLength="1" d="M160 150L260 60"/><path pathLength="1" d="M160 150L275 170"/>
+        <path pathLength="1" d="M160 150L200 265"/><path pathLength="1" d="M160 150L55 215"/><path pathLength="1" d="M70 70L260 60"/>
+        <path pathLength="1" d="M275 170L200 265"/><path pathLength="1" d="M55 215L200 265"/><path pathLength="1" d="M70 70L55 215"/>
+      </g>
+      <g fill="#0B1A24" stroke="#4FC3D4" stroke-width="2">
+        <circle cx="70" cy="70" r="9"/><circle cx="260" cy="60" r="9"/><circle cx="275" cy="170" r="9"/><circle cx="200" cy="265" r="9"/><circle cx="55" cy="215" r="9"/>
+      </g>
+      <circle cx="160" cy="150" r="30" fill="#E39B0B" opacity=".18"/>
+      <circle cx="160" cy="150" r="16" fill="#F2B53A"/>
+    </svg>
+      <img src="photo.png" alt="Portrait of Rohit Mandal" width="451" height="525">
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <dl class="stats" aria-label="Delivery record">
+    <div><dt>98%</dt><dd>on-time delivery across 10+ DERMS and grid projects</dd></div>
+    <div><dt>25+</dt><dd>enterprise platform features managed</dd></div>
+    <div><dt>5+</dt><dd>customers retained on 10+ year contracts</dd></div>
+    <div><dt>20%</dt><dd>better reliability on managed services</dd></div>
+  </dl>
+</div>
+
+<main>
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <h2>About</h2>
+      <p>I am a Project Manager and Certified ScrumMaster with more than 7 years of experience delivering technology implementation projects for utility clients. Over 5 of those years have been client-facing consulting.</p>
+      <p>My work connects teams, vendors and initiatives. I translate between technical and business perspectives, and I am comfortable with both Waterfall and Agile delivery using Scrum or SAFe. I also contribute to Enterprise Architecture discussions.</p>
+      <p>Based in Hyderabad, India. I work US Central and Eastern time hours when projects need it.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <div class="gantt" role="img" aria-label="Career timeline: Business Analyst from April 2019 to May 2021, Project Manager from May 2021 to present, both at OATI">
+      <div class="gantt-inner">
+        <div class="years" aria-hidden="true"><span>2019</span><span>2020</span><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span></div>
+        <div class="track" aria-hidden="true">
+          <div class="bar ba">Business Analyst</div>
+          <div class="bar pm">Project Manager, present</div>
+        </div>
+      </div>
+    </div>
+
+    <article class="role-block">
+      <h3>Project Manager</h3>
+      <p class="sub">Open Access Technology India (OATI) | May 2021 to present</p>
+      <ul>
+        <li>Built project charters and plans in Microsoft Project, mapping timelines, milestones and delivery risks with mitigation plans before execution began. Achieved 98% on-time delivery across 10+ DERMS and grid technology projects.</li>
+        <li>Managed end-to-end delivery of DERMS and grid management implementations that give utilities real-time monitoring and control of distributed energy resources, integrated with legacy SCADA and EMS systems.</li>
+        <li>Reported status, risks, issues and dependencies to clients in the US, Saudi Arabia and South Korea, and to Fortune 500 vendors including Google and Honeywell.</li>
+        <li>Owned release management and prioritization across 25+ enterprise platform features, using velocity and burndown data to forecast delivery within approved budgets.</li>
+        <li>Provided client-facing consulting on market products, energy savings through DERMS and grid automation through IoT. Helped retain 5+ customers on 10+ year contracts.</li>
+      </ul>
+      <details>
+        <summary>More about this role</summary>
+        <ul>
+          <li>Managed risks, issues and dependencies, tracked risk metrics, and supported quality through UAT and root cause analysis.</li>
+          <li>Balanced workloads through capacity monitoring and resource levelling, and reported project health indicators.</li>
+          <li>Served as Scrum Master for cross-functional teams: Sprint Planning, Backlog Refinement, Daily Stand-ups, Sprint Reviews and Retrospectives.</li>
+          <li>Trained and coached junior team members on Agile practices and DERMS and grid domain knowledge.</li>
+          <li>Led managed services delivery for custom applications, improving reliability by 20% through root cause analysis and incident and SLA management.</li>
+          <li>Produced solution design documentation (C4 diagrams, technical specifications) and contributed to Enterprise Architecture discussions.</li>
+          <li>Acted as thermostat subject matter expert, coordinating with vendors to streamline workflows and improve application integration.</li>
+          <li>Designed and configured application workflows with business partners to improve process efficiency and user experience.</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="role-block">
+      <h3>Business Analyst</h3>
+      <p class="sub">Open Access Technology India (OATI) | April 2019 to May 2021</p>
+      <ul>
+        <li>Designed and executed 10+ User Acceptance Testing plans across 5+ projects, supporting smooth rollouts aligned with client expectations.</li>
+        <li>Defined project scope and created Requirement Traceability Matrices for utility projects, linking business needs to technical deliverables.</li>
+        <li>Identified requirement risks and proposed mitigations to keep delivery within scope and budget.</li>
+        <li>Built KPI dashboards and performance reports that gave stakeholders insight for data-driven decisions.</li>
+        <li>Supported business analysis for Energy Trading and Risk Management (ETRM) and Commodity Trading and Risk Management (CTRM) projects.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><h3>Project and program management</h3><ul class="chips"><li>Project planning</li><li>Project charters</li><li>Status reporting</li><li>Risk management</li><li>Resource levelling</li><li>Capacity planning</li><li>Budget analysis</li><li>Forecasting</li><li>Stakeholder management</li><li>Change management</li><li>Release management</li><li>SLA management</li><li>Incident management</li><li>Root cause analysis</li><li>Gap analysis</li></ul></div>
+      <div><h3>Agile and Scrum</h3><ul class="chips"><li>Scrum</li><li>SAFe</li><li>Sprint planning</li><li>Backlog refinement</li><li>Retrospectives</li><li>Backlog prioritization</li><li>Velocity and burndown</li><li>Agile coaching</li><li>Team training</li></ul></div>
+      <div><h3>Tools and documentation</h3><ul class="chips"><li>Microsoft Project</li><li>Microsoft Office</li><li>Azure DevOps</li><li>SQL</li><li>KPI dashboards</li><li>RTM</li><li>UAT</li><li>C4 diagrams</li><li>Technical specifications</li></ul></div>
+      <div><h3>Domain and technology</h3><ul class="chips"><li>DERMS</li><li>Grid management</li><li>SCADA</li><li>EMS</li><li>IoT</li><li>Smart thermostat programs</li><li>Power systems</li><li>Demand response</li><li>Load forecasting</li><li>ETRM and CTRM</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="credentials">
+  <div class="wrap">
+    <h2>Credentials</h2>
+    <div class="cols">
+      <div>
+        <h3>Certifications</h3>
+        <ul>
+          <li>Certified ScrumMaster (CSM), Scrum Alliance</li>
+          <li>Professional Agile Coach, UpGrad</li>
+          <li>Microsoft Project Professional, Microsoft and LinkedIn Learning</li>
+          <li>Project Management Professional (PMP), training in progress</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Education</h3>
+        <ul>
+          <li>B.E. in Electronics and Communication Engineering, Chandigarh University, 2015 to 2019</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Awards</h3>
+        <ul>
+          <li>OATI Yearly Excellence Award, for outstanding performance and consistent contribution</li>
+          <li>OATI Quarterly Excellence Award, for dedication, quality of work and team collaboration</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>Open to project and program management roles in energy and utility technology.</p>
+    <p><a class="big-link" href="mailto:mandalrohit0583@gmail.com">mandalrohit0583@gmail.com</a></p>
+    <p><a href="https://linkedin.com/in/rohit-agile-pm" target="_blank" rel="noopener">linkedin.com/in/rohit-agile-pm</a> | Hyderabad, India</p>
+  </div>
+</footer>
+</body>
+</html>
